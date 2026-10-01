@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beatreffer</string>
+
+    <!-- Allgemein -->
+    <string name="start">Start</string>
+    <string name="stop">Stopp</string>
+    <string name="back">Zurück</string>
+    <string name="done">Fertig</string>
+    <string name="again">Nochmal</string>
+    <string name="apply">Übernehmen</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="delete">Löschen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="progress">Fortschritt</string>
+    <string name="minutes_short">%1$d min</string>
+
+    <!-- Startseite -->
+    <string name="mode_simple">Einfach</string>
+    <string name="mode_advanced">Erweitert</string>
+    <string name="tempo">Tempo</string>
+    <string name="tempo_unit_hint">Das Tempo zählt in 1/%1$d-Noten.</string>
+    <string name="duration">Dauer</string>
+    <string name="duration_minutes">Minuten</string>
+    <string name="duration_bars">Takte</string>
+    <string name="sound_section">Ton</string>
+    <string name="calibration_missing_title">Noch nicht kalibriert</string>
+    <string name="calibration_missing_text">Jedes Handy hat eine eigene Verzögerung bei Ton und Touchscreen. Kalibriere einmal, damit die Bewertung stimmt. Dauert etwa 15 Sekunden.</string>
+    <string name="calibrate_now">Kalibrieren</string>
+
+    <string name="mute_always_on">Ton an</string>
+    <string name="mute_always_on_hint">Der Klick läuft die ganze Zeit mit.</string>
+    <string name="mute_accent_only">Nur die Eins</string>
+    <string name="mute_accent_only_hint">Nur der erste Schlag jedes Takts klickt.</string>
+    <string name="mute_alternate">Takte an und aus</string>
+    <string name="mute_alternate_hint">Abwechselnd Takte mit und ohne Ton.</string>
+    <string name="mute_random_gaps">Zufällige Lücken</string>
+    <string name="mute_random_gaps_hint">Einzelne Takte bleiben unvorhersehbar still.</string>
+    <string name="mute_count_in_silent">Vorzählen, dann still</string>
+    <string name="mute_count_in_silent_hint">Der Klick zählt vor und verstummt dann.</string>
+    <string name="mute_full_silent">Komplett still</string>
+    <string name="mute_full_silent_hint">Kein Ton. Ein Takt wird nur optisch vorgezählt, danach ist auch die Anzeige aus.</string>
+
+    <string name="bars_on">Takte an</string>
+    <string name="bars_off">Takte aus</string>
+    <string name="gap_share">Anteil still</string>
+    <string name="count_in_bars">Vorzähltakte</string>
+    <string name="visual_in_silence">Anzeige in stillen Takten</string>
+    <string name="visual_pulse">Puls</string>
+    <string name="visual_target_only">Nur Zielschlag</string>
+    <string name="visual_none">Nichts</string>
+
+    <string name="practice_type">Übungsart</string>
+    <string name="type_beat">Grundschlag</string>
+    <string name="type_subdivision">Unterteilung</string>
+    <string name="type_pattern">Muster</string>
+    <string name="type_beat_hint">Du tippst jeden Schlag im Takt.</string>
+    <string name="sub_eighths">Achtel</string>
+    <string name="sub_triplets">Triolen</string>
+    <string name="sub_sixteenths">Sechzehntel</string>
+    <string name="subdivision_audible">Unterteilung leise mitklicken</string>
+    <string name="pattern_legend">x = tippen, . = Pause. Der Klick spielt dazu den Grundschlag.</string>
+    <string name="level_easy">Leicht</string>
+    <string name="level_medium">Mittel</string>
+    <string name="level_hard">Schwer</string>
+
+    <string name="time_signature">Taktart</string>
+    <string name="numerator">Schläge pro Takt</string>
+    <string name="denominator">Notenwert</string>
+    <string name="grouping">Betonung</string>
+    <string name="grouping_none">Keine</string>
+    <string name="grouping_custom">Eigene Gruppierung, z. B. 2+2+3</string>
+    <string name="grouping_error">Die Zahlen müssen zusammen %1$d ergeben.</string>
+
+    <string name="target_beat">Zielschlag</string>
+    <string name="target_fixed">Fest</string>
+    <string name="target_rotate">Rotierend</string>
+    <string name="target_all_hint">Keiner ausgewählt bedeutet: alle Schläge sind Ziel.</string>
+    <string name="target_some_hint">Nur die markierten Schläge müssen getippt werden.</string>
+    <string name="target_reset">Alle Schläge</string>
+    <string name="target_rotate_hint">Jeden Takt wandert das Ziel einen Schlag weiter: 1, 2 bis %1$d, dann wieder von vorne.</string>
+    <string name="summary_beats">Schlag %1$s</string>
+
+    <string name="evaluation">Bewertung</string>
+    <string name="tolerance">Toleranzfenster</string>
+    <string name="tol_easy">Leicht ±%1$d</string>
+    <string name="tol_medium">Mittel ±%1$d</string>
+    <string name="tol_hard">Schwer ±%1$d</string>
+    <string name="count_extra_taps">Fehltipps werten</string>
+    <string name="count_extra_taps_hint">Tipps außerhalb der Zielschläge senken die Punkte.</string>
+
+    <!-- Üben -->
+    <string name="get_ready">Gleich geht es los</string>
+    <string name="count_in">Vorzählen</string>
+    <string name="finished">Fertig</string>
+    <string name="bar_of">Takt %1$d von %2$d</string>
+    <string name="no_visual">Keine Anzeige. Zähl selbst mit.</string>
+    <string name="tap_here">Hier tippen</string>
+    <string name="fb_exact">Genau</string>
+    <string name="fb_bit_early">Etwas früh</string>
+    <string name="fb_bit_late">Etwas spät</string>
+    <string name="fb_too_early">Zu früh</string>
+    <string name="fb_too_late">Zu spät</string>
+    <string name="fb_double">Doppelt getippt</string>
+    <string name="fb_extra">Kein Zielschlag</string>
+    <string name="fb_ignored">Erst nach dem Vorzählen</string>
+
+    <!-- Ergebnis -->
+    <string name="result">Ergebnis</string>
+    <string name="stopped_early">Vorzeitig beendet. Gewertet wurde nur der gespielte Teil.</string>
+    <string name="not_saved">Zu kurz für die Statistik, wird nicht gespeichert.</string>
+    <string name="score">Punkte</string>
+    <string name="score_hint">Treffer im Toleranzfenster zählen bis zu 1 Punkt, je genauer desto mehr. Verpasste Schläge zählen 0.</string>
+    <string name="new_best">Neuer Bestwert für diese Einstellung</string>
+    <string name="details">Details</string>
+    <string name="hit_rate">Trefferquote</string>
+    <string name="mean_deviation">Ø Abweichung</string>
+    <string name="spread">Streuung</string>
+    <string name="tendency">Tendenz</string>
+    <string name="tendency_early">eilt, %1$s ms zu früh</string>
+    <string name="tendency_late">schleppt, %1$s ms zu spät</string>
+    <string name="tendency_centered">mittig</string>
+    <string name="drift">Tempo im Verlauf</string>
+    <string name="drift_faster">wird schneller (%1$s ms/min)</string>
+    <string name="drift_slower">wird langsamer (%1$s ms/min)</string>
+    <string name="drift_stable">stabil</string>
+    <string name="misses">Verpasst</string>
+    <string name="extra_taps">Fehltipps</string>
+    <string name="with_vs_without_sound">Mit und ohne Ton</string>
+    <string name="with_sound">Mit Ton</string>
+    <string name="without_sound">Ohne Ton</string>
+    <string name="per_beat">Pro Schlag</string>
+    <string name="per_beat_hint">Höhe = Ø Abweichung in ms, Farbe = Trefferquote.</string>
+    <string name="compare_title">Vergleich mit früher</string>
+    <string name="compare_hint">Nur Übungen mit genau dieser Einstellung.</string>
+    <string name="compare_none">Noch keine früheren Übungen mit dieser Einstellung.</string>
+    <string name="last_7_days">Letzte 7 Tage (%1$d Übungen)</string>
+    <string name="last_30_days">Letzte 30 Tage (%1$d Übungen)</string>
+    <string name="hits_short">Treffer</string>
+    <string name="deviation_short">Abweichung</string>
+    <string name="next_level_title">Bereit für mehr?</string>
+    <string name="next_level_text">Deine letzten drei Übungen mit dieser Einstellung waren stabil gut. Wähle eine Steigerung oder bleib einfach dabei.</string>
+    <string name="suggest_tempo">Tempo auf %1$d BPM</string>
+    <string name="suggest_silence">Mehr Stille: %1$s</string>
+    <string name="suggest_tolerance">Engeres Fenster: ±%1$d ms</string>
+
+    <!-- Fortschritt -->
+    <string name="range_7">7 Tage</string>
+    <string name="range_30">30 Tage</string>
+    <string name="range_90">90 Tage</string>
+    <string name="range_all">Alles</string>
+    <string name="scope_all">Alle Übungen</string>
+    <string name="scope_current">Aktuelle Einstellung</string>
+    <string name="no_data_title">Noch keine Daten</string>
+    <string name="no_data_text">Für diesen Filter gibt es noch keine Übungen.</string>
+    <string name="overview">Überblick</string>
+    <string name="sessions_count">Übungen</string>
+    <string name="practice_time">Übungszeit</string>
+    <string name="avg_score">Ø Punkte</string>
+    <string name="chart_score">Punkte pro Tag</string>
+    <string name="chart_hit_rate">Trefferquote pro Tag</string>
+    <string name="chart_deviation">Ø Abweichung pro Tag (ms)</string>
+    <string name="chart_deviation_hint">Weniger ist besser.</string>
+    <string name="weaknesses">Schwachstellen</string>
+    <string name="ins_not_enough">Für eine Analyse brauche ich mindestens drei Übungen.</string>
+    <string name="ins_all_good">Keine auffälligen Schwachstellen. Weiter so.</string>
+    <string name="ins_weak_beat">Im %2$s-Takt liegst du auf Schlag %1$d am meisten daneben: %3$s ms statt %4$s ms im Schnitt, Trefferquote %5$s %% statt %6$s %%.</string>
+    <string name="ins_silent">In stillen Takten triffst du %1$s %% statt %2$s %% mit Ton. Abweichung %3$s ms statt %4$s ms.</string>
+    <string name="ins_tempo">Ab etwa %1$d BPM sinkt deine Trefferquote auf %2$s %% (vorher %3$s %%).</string>
+    <string name="ins_rushing">Du eilst: im Schnitt %1$s ms zu früh.</string>
+    <string name="ins_dragging">Du schleppst: im Schnitt %1$s ms zu spät.</string>
+    <string name="ins_speeding_up">Im Verlauf einer Übung wirst du schneller (etwa %1$s ms pro Minute).</string>
+    <string name="ins_slowing_down">Im Verlauf einer Übung wirst du langsamer (etwa %1$s ms pro Minute).</string>
+    <string name="personal_bests">Bestwerte</string>
+    <string name="history">Letzte Übungen</string>
+    <string name="export">Export</string>
+    <string name="export_taps">Einzelne Tipps mit exportieren</string>
+    <string name="export_taps_hint">Zusätzliche Datei mit jedem Tipp und seiner Abweichung.</string>
+    <string name="export_csv">Als CSV teilen</string>
+    <string name="export_share_title">Übungsdaten teilen</string>
+
+    <!-- Einstellungen -->
+    <string name="calibration">Kalibrierung</string>
+    <string name="calibration_explain">Misst die Verzögerung von Lautsprecher, Touchscreen und deiner Wahrnehmung. Der Wert wird von jedem Tipp abgezogen. Mit Kopfhörern (vor allem Bluetooth) neu kalibrieren.</string>
+    <string name="calibration_value">Aktueller Wert</string>
+    <string name="not_calibrated">nicht kalibriert</string>
+    <string name="calibration_steps">Drück auf Start und tippe genau mit dem Klick, insgesamt %1$d Schläge. Die ersten %2$d zählen nicht.</string>
+    <string name="calibration_taps">Tipps: %1$d</string>
+    <string name="calibration_result">Gemessene Verzögerung</string>
+    <string name="calibration_result_hint">Positiv heißt: deine Tipps kommen beim Handy später an als der Klick.</string>
+    <string name="calibration_failed">Zu wenige brauchbare Tipps. Bitte nochmal versuchen.</string>
+    <string name="click_sound">Klang</string>
+    <string name="sound_woodblock">Holzblock</string>
+    <string name="sound_beep">Beep</string>
+    <string name="sound_hihat">Hi-Hat</string>
+    <string name="preview">Probehören</string>
+    <string name="display">Anzeige</string>
+    <string name="live_feedback">Live-Feedback</string>
+    <string name="live_feedback_hint">Nach jedem Tipp anzeigen, ob er zu früh, zu spät oder genau war.</string>
+    <string name="data">Daten</string>
+    <string name="data_local_hint">Alle Daten bleiben auf diesem Handy. Es gibt kein Konto und keine Cloud.</string>
+    <string name="delete_all">Alle Übungsdaten löschen</string>
+    <string name="delete_all_confirm">Alle gespeicherten Übungen werden gelöscht. Das lässt sich nicht rückgängig machen.</string>
+    <string name="about">Über die App</string>
+    <string name="about_text">Beatreffer %1$s</string>
+</resources>

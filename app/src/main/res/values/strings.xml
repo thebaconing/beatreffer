@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beatreffer</string>
+
+    <!-- General -->
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="again">Again</string>
+    <string name="apply">Apply</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="settings">Settings</string>
+    <string name="progress">Progress</string>
+    <string name="minutes_short">%1$d min</string>
+
+    <!-- Home -->
+    <string name="mode_simple">Simple</string>
+    <string name="mode_advanced">Advanced</string>
+    <string name="tempo">Tempo</string>
+    <string name="tempo_unit_hint">Tempo counts in 1/%1$d notes.</string>
+    <string name="duration">Duration</string>
+    <string name="duration_minutes">Minutes</string>
+    <string name="duration_bars">Bars</string>
+    <string name="sound_section">Sound</string>
+    <string name="calibration_missing_title">Not calibrated yet</string>
+    <string name="calibration_missing_text">Every phone has its own audio and touchscreen delay. Calibrate once so the scoring is accurate. Takes about 15 seconds.</string>
+    <string name="calibrate_now">Calibrate</string>
+
+    <string name="mute_always_on">Sound on</string>
+    <string name="mute_always_on_hint">The click plays the whole time.</string>
+    <string name="mute_accent_only">Downbeat only</string>
+    <string name="mute_accent_only_hint">Only the first beat of each bar clicks.</string>
+    <string name="mute_alternate">Bars on and off</string>
+    <string name="mute_alternate_hint">Alternating bars with and without sound.</string>
+    <string name="mute_random_gaps">Random gaps</string>
+    <string name="mute_random_gaps_hint">Some bars go silent unpredictably.</string>
+    <string name="mute_count_in_silent">Count in, then silent</string>
+    <string name="mute_count_in_silent_hint">The click counts in and then stops.</string>
+    <string name="mute_full_silent">Completely silent</string>
+    <string name="mute_full_silent_hint">No sound. One bar is counted in visually, then the display goes dark too.</string>
+
+    <string name="bars_on">Bars on</string>
+    <string name="bars_off">Bars off</string>
+    <string name="gap_share">Silent share</string>
+    <string name="count_in_bars">Count-in bars</string>
+    <string name="visual_in_silence">Display in silent bars</string>
+    <string name="visual_pulse">Pulse</string>
+    <string name="visual_target_only">Target only</string>
+    <string name="visual_none">Nothing</string>
+
+    <string name="practice_type">Exercise</string>
+    <string name="type_beat">Beat</string>
+    <string name="type_subdivision">Subdivision</string>
+    <string name="type_pattern">Pattern</string>
+    <string name="type_beat_hint">You tap every beat of the bar.</string>
+    <string name="sub_eighths">Eighths</string>
+    <string name="sub_triplets">Triplets</string>
+    <string name="sub_sixteenths">Sixteenths</string>
+    <string name="subdivision_audible">Click subdivisions quietly</string>
+    <string name="pattern_legend">x = tap, . = rest. The click plays the beat.</string>
+    <string name="level_easy">Easy</string>
+    <string name="level_medium">Medium</string>
+    <string name="level_hard">Hard</string>
+
+    <string name="time_signature">Time signature</string>
+    <string name="numerator">Beats per bar</string>
+    <string name="denominator">Note value</string>
+    <string name="grouping">Accents</string>
+    <string name="grouping_none">None</string>
+    <string name="grouping_custom">Custom grouping, e.g. 2+2+3</string>
+    <string name="grouping_error">The numbers must add up to %1$d.</string>
+
+    <string name="target_beat">Target beat</string>
+    <string name="target_fixed">Fixed</string>
+    <string name="target_rotate">Rotating</string>
+    <string name="target_all_hint">None selected means every beat is a target.</string>
+    <string name="target_some_hint">Only the marked beats need to be tapped.</string>
+    <string name="target_reset">All beats</string>
+    <string name="target_rotate_hint">Each bar the target moves one beat on: 1, 2 up to %1$d, then starts over.</string>
+    <string name="summary_beats">Beat %1$s</string>
+
+    <string name="evaluation">Scoring</string>
+    <string name="tolerance">Tolerance window</string>
+    <string name="tol_easy">Easy ±%1$d</string>
+    <string name="tol_medium">Medium ±%1$d</string>
+    <string name="tol_hard">Hard ±%1$d</string>
+    <string name="count_extra_taps">Count wrong taps</string>
+    <string name="count_extra_taps_hint">Taps outside the target beats lower the score.</string>
+
+    <!-- Practice -->
+    <string name="get_ready">Get ready</string>
+    <string name="count_in">Count-in</string>
+    <string name="finished">Finished</string>
+    <string name="bar_of">Bar %1$d of %2$d</string>
+    <string name="no_visual">No display. Count yourself.</string>
+    <string name="tap_here">Tap here</string>
+    <string name="fb_exact">Spot on</string>
+    <string name="fb_bit_early">A bit early</string>
+    <string name="fb_bit_late">A bit late</string>
+    <string name="fb_too_early">Too early</string>
+    <string name="fb_too_late">Too late</string>
+    <string name="fb_double">Double tap</string>
+    <string name="fb_extra">Not a target beat</string>
+    <string name="fb_ignored">Wait for the count-in</string>
+
+    <!-- Result -->
+    <string name="result">Result</string>
+    <string name="stopped_early">Stopped early. Only the played part was scored.</string>
+    <string name="not_saved">Too short for the statistics, not saved.</string>
+    <string name="score">Score</string>
+    <string name="score_hint">Hits inside the tolerance window earn up to 1 point, more the closer they are. Missed beats earn 0.</string>
+    <string name="new_best">New best for this setting</string>
+    <string name="details">Details</string>
+    <string name="hit_rate">Hit rate</string>
+    <string name="mean_deviation">Avg. deviation</string>
+    <string name="spread">Spread</string>
+    <string name="tendency">Tendency</string>
+    <string name="tendency_early">rushing, %1$s ms early</string>
+    <string name="tendency_late">dragging, %1$s ms late</string>
+    <string name="tendency_centered">centered</string>
+    <string name="drift">Tempo over time</string>
+    <string name="drift_faster">speeding up (%1$s ms/min)</string>
+    <string name="drift_slower">slowing down (%1$s ms/min)</string>
+    <string name="drift_stable">stable</string>
+    <string name="misses">Missed</string>
+    <string name="extra_taps">Wrong taps</string>
+    <string name="with_vs_without_sound">With and without sound</string>
+    <string name="with_sound">With sound</string>
+    <string name="without_sound">Without sound</string>
+    <string name="per_beat">Per beat</string>
+    <string name="per_beat_hint">Height = avg. deviation in ms, color = hit rate.</string>
+    <string name="compare_title">Compared to before</string>
+    <string name="compare_hint">Only sessions with exactly this setting.</string>
+    <string name="compare_none">No earlier sessions with this setting yet.</string>
+    <string name="last_7_days">Last 7 days (%1$d sessions)</string>
+    <string name="last_30_days">Last 30 days (%1$d sessions)</string>
+    <string name="hits_short">Hits</string>
+    <string name="deviation_short">Deviation</string>
+    <string name="next_level_title">Ready for more?</string>
+    <string name="next_level_text">Your last three sessions with this setting were consistently good. Pick a step up or just stay where you are.</string>
+    <string name="suggest_tempo">Tempo to %1$d BPM</string>
+    <string name="suggest_silence">More silence: %1$s</string>
+    <string name="suggest_tolerance">Tighter window: ±%1$d ms</string>
+
+    <!-- Progress -->
+    <string name="range_7">7 days</string>
+    <string name="range_30">30 days</string>
+    <string name="range_90">90 days</string>
+    <string name="range_all">All</string>
+    <string name="scope_all">All sessions</string>
+    <string name="scope_current">Current setting</string>
+    <string name="no_data_title">No data yet</string>
+    <string name="no_data_text">There are no sessions for this filter yet.</string>
+    <string name="overview">Overview</string>
+    <string name="sessions_count">Sessions</string>
+    <string name="practice_time">Practice time</string>
+    <string name="avg_score">Avg. score</string>
+    <string name="chart_score">Score per day</string>
+    <string name="chart_hit_rate">Hit rate per day</string>
+    <string name="chart_deviation">Avg. deviation per day (ms)</string>
+    <string name="chart_deviation_hint">Lower is better.</string>
+    <string name="weaknesses">Weak spots</string>
+    <string name="ins_not_enough">The analysis needs at least three sessions.</string>
+    <string name="ins_all_good">No notable weak spots. Keep it up.</string>
+    <string name="ins_weak_beat">In %2$s you are furthest off on beat %1$d: %3$s ms instead of %4$s ms on average, hit rate %5$s %% instead of %6$s %%.</string>
+    <string name="ins_silent">In silent bars you hit %1$s %% instead of %2$s %% with sound. Deviation %3$s ms instead of %4$s ms.</string>
+    <string name="ins_tempo">From about %1$d BPM your hit rate drops to %2$s %% (before %3$s %%).</string>
+    <string name="ins_rushing">You rush: on average %1$s ms early.</string>
+    <string name="ins_dragging">You drag: on average %1$s ms late.</string>
+    <string name="ins_speeding_up">During a session you speed up (about %1$s ms per minute).</string>
+    <string name="ins_slowing_down">During a session you slow down (about %1$s ms per minute).</string>
+    <string name="personal_bests">Personal bests</string>
+    <string name="history">Recent sessions</string>
+    <string name="export">Export</string>
+    <string name="export_taps">Include individual taps</string>
+    <string name="export_taps_hint">Extra file with every tap and its deviation.</string>
+    <string name="export_csv">Share as CSV</string>
+    <string name="export_share_title">Share practice data</string>
+
+    <!-- Settings -->
+    <string name="calibration">Calibration</string>
+    <string name="calibration_explain">Measures the delay of speaker, touchscreen and your perception. The value is subtracted from every tap. Recalibrate when using headphones (especially Bluetooth).</string>
+    <string name="calibration_value">Current value</string>
+    <string name="not_calibrated">not calibrated</string>
+    <string name="calibration_steps">Press start and tap exactly with the click, %1$d beats in total. The first %2$d do not count.</string>
+    <string name="calibration_taps">Taps: %1$d</string>
+    <string name="calibration_result">Measured delay</string>
+    <string name="calibration_result_hint">Positive means your taps reach the phone later than the click.</string>
+    <string name="calibration_failed">Not enough usable taps. Please try again.</string>
+    <string name="click_sound">Click sound</string>
+    <string name="sound_woodblock">Woodblock</string>
+    <string name="sound_beep">Beep</string>
+    <string name="sound_hihat">Hi-hat</string>
+    <string name="preview">Preview</string>
+    <string name="display">Display</string>
+    <string name="live_feedback">Live feedback</string>
+    <string name="live_feedback_hint">Show after each tap whether it was early, late or spot on.</string>
+    <string name="data">Data</string>
+    <string name="data_local_hint">All data stays on this phone. No account, no cloud.</string>
+    <string name="delete_all">Delete all practice data</string>
+    <string name="delete_all_confirm">All saved sessions will be deleted. This cannot be undone.</string>
+    <string name="about">About</string>
+    <string name="about_text">Beatreffer %1$s</string>
+</resources>
