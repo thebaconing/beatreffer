@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/logo.svg" alt="Beatreffer" width="360"></p>
+
 # Beatreffer
 
 Android-App zum Üben von Timing. Du tippst den Takt auf einem großen Button nach, ein Klick gibt den Takt vor und lässt sich stufenweise ausblenden. Jeder Tipp wird bewertet, der Verlauf zeigt Fortschritt, Bestwerte und Schwachstellen.

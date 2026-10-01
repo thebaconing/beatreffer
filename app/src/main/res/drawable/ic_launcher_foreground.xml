@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Metronom: Trapez-Koerper mit Pendel -->
+<!-- Symbol: Zielscheibe (Treffer) mit Schallbögen links und rechts (Beat). Alles im sicheren Bereich (Radius 33). -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <!-- Äußerer Ring -->
     <path
-        android:fillColor="#F4B942"
-        android:pathData="M46,30 L62,30 L74,78 L34,78 Z" />
-    <path
-        android:fillColor="#1F2A44"
-        android:pathData="M38,70 L70,70 L71.5,76 L36.5,76 Z" />
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3.5"
-        android:strokeLineCap="round"
-        android:pathData="M54,68 L66,36" />
+        android:strokeColor="#F4B942"
+        android:strokeWidth="5"
+        android:pathData="M54,34 a20,20 0 1,0 0.01,0 Z" />
+    <!-- Treffer in der Mitte -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M60,46 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+        android:pathData="M54,46 a8,8 0 1,0 0.01,0 Z" />
+    <!-- Schallbögen -->
+    <path
+        android:strokeColor="#F4B942"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M27,44 A28,28 0 0,0 27,64 M81,44 A28,28 0 0,1 81,64" />
 </vector>

@@ -117,7 +117,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         repo.saveConfig(c)
     }
 
-    fun setExportTaps(v: Boolean) {
+    fun changeExportTaps(v: Boolean) {
         exportTaps = v
         repo.exportTaps = v
     }

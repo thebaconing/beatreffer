@@ -58,4 +58,4 @@ Unter Windows `gradlew.bat` statt `./gradlew`.
 ## Stand
 
 - Version 0.5, erstellt ohne Zugriff auf ein Android SDK. Die Kernlogik in `core/` ist getestet, der Android-/Compose-Teil wurde noch nie kompiliert. Beim ersten Build können kleinere Compile-Fehler auftauchen, die zu beheben sind.
-- Noch offen / Ideen: Vibration als Feedback, eigene Muster im Editor, Rotation mit mehreren Zielschlägen gleichzeitig, App-Icon verfeinern
+- Noch offen / Ideen: Vibration als Feedback, eigene Muster im Editor, Rotation mit mehreren Zielschlägen gleichzeitig

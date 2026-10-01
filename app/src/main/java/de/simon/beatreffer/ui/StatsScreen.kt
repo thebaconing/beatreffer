@@ -10,8 +10,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Button
@@ -83,7 +81,7 @@ fun StatsScreen(vm: MainViewModel) {
         },
     ) { pad ->
         Column(
-            Modifier.padding(pad).fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
+            Modifier.padding(pad).fillMaxSize().verticalScrollWithIndicator().padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             ChipChoice(Range.entries, range, {
@@ -214,7 +212,7 @@ private fun SessionRow(s: SessionSummary) {
 @Composable
 private fun ExportCard(vm: MainViewModel, context: Context) {
     SectionCard(stringResource(R.string.export)) {
-        SwitchRow(stringResource(R.string.export_taps), vm.exportTaps, { vm.setExportTaps(it) },
+        SwitchRow(stringResource(R.string.export_taps), vm.exportTaps, { vm.changeExportTaps(it) },
             hint = stringResource(R.string.export_taps_hint))
         val title = stringResource(R.string.export_share_title)
         Button(

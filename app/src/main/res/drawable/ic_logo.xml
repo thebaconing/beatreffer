@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo für die App-Oberfläche: dasselbe Symbol wie das App-Icon, ohne Hintergrund und Rand -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="32dp"
+    android:viewportWidth="60"
+    android:viewportHeight="48">
+    <group android:translateX="-24" android:translateY="-30">
+        <path
+            android:strokeColor="#F4B942"
+            android:strokeWidth="5"
+            android:pathData="M54,34 a20,20 0 1,0 0.01,0 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,46 a8,8 0 1,0 0.01,0 Z" />
+        <path
+            android:strokeColor="#F4B942"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M27,44 A28,28 0 0,0 27,64 M81,44 A28,28 0 0,1 81,64" />
+    </group>
+</vector>
