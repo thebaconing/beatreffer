@@ -9,10 +9,10 @@ Android-App zum Üben von Timing. Du tippst den Takt auf einem großen Button na
 | Was | Version |
 | --- | --- |
 | JDK | 17 (z. B. [Temurin](https://adoptium.net/) oder das JDK aus Android Studio) |
-| Android SDK | Platform 35 (`platforms;android-35`) und Build-Tools 35 |
-| Gradle | wird über den Wrapper (`gradlew`) automatisch geladen, 8.11.1 |
+| Android SDK | Platform 36 (`platforms;android-36`) und Build-Tools 36 |
+| Gradle | wird über den Wrapper (`gradlew`) automatisch geladen, 9.7.1 |
 
-Das Projekt nutzt AGP 8.7, Kotlin 2.1 und Jetpack Compose. Außer AndroidX/Compose gibt es keine externen Bibliotheken.
+Das Projekt nutzt AGP 9.4, Kotlin 2.2 und Jetpack Compose. Außer AndroidX/Compose gibt es keine externen Bibliotheken.
 
 ## SDK einrichten
 
@@ -28,7 +28,7 @@ Das Projekt nutzt AGP 8.7, Kotlin 2.1 und Jetpack Compose. Außer AndroidX/Compo
 3. Pakete installieren und Lizenzen akzeptieren:
 
    ```sh
-   sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+   sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
    sdkmanager --licenses
    ```
 
@@ -50,6 +50,7 @@ Unter Windows `gradlew.bat` statt `./gradlew` verwenden.
 ```sh
 ./gradlew assembleDebug        # Debug-APK
 ./gradlew assembleRelease      # Release-APK
+./gradlew bundleRelease        # App Bundle für den Play Store
 ./gradlew testDebugUnitTest    # Unit-Tests der Kernlogik (core/)
 ./gradlew installDebug         # auf angeschlossenes Handy installieren
 ```
@@ -61,7 +62,7 @@ Die APKs liegen danach unter:
 
 Der erste Build lädt Gradle und alle Abhängigkeiten herunter und dauert einige Minuten.
 
-**Signierung:** Der Release-Build wird derzeit mit dem Debug-Schlüssel signiert (siehe `app/build.gradle.kts`). Das reicht zum Installieren und Testen, für eine Veröffentlichung im Play Store braucht es einen eigenen Keystore.
+**Signierung:** Liegt eine `keystore.properties` im Projektordner, wird der Release-Build mit dem eigenen Upload-Schlüssel signiert, sonst mit dem Debug-Schlüssel. Wie man den Schlüssel anlegt und die App im Play Store veröffentlicht, steht in [RELEASE.md](RELEASE.md).
 
 **Version:** `versionCode` und `versionName` stehen in `app/build.gradle.kts`.
 
@@ -75,7 +76,7 @@ Mindestens Android 8.0 (API 26).
 ## Projektaufbau
 
 ```text
-app/src/main/java/de/simon/beatreffer/
+app/src/main/java/de/thebaconing/beatreffer/
   core/    Reine Kotlin-Logik (Takt-Plan, Bewertung, Fortschritt, Kalibrierung, CSV), per JUnit getestet
   audio/   Klick-Erzeugung und sample-genaue Wiedergabe über AudioTrack
   data/    Speichern/Laden (SharedPreferences, JSON-Zeilen), Export

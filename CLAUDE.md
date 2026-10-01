@@ -5,14 +5,14 @@ Android-App zum Üben von Timing: Der Nutzer tippt einen Takt auf einem großen 
 ## Stack
 
 - Kotlin, Jetpack Compose (Material 3), eine Activity, kein Navigation-Framework
-- minSdk 26, targetSdk 35, AGP 8.7, Kotlin 2.1, Gradle 8.11
+- minSdk 26, targetSdk 36, AGP 9.4, Kotlin 2.2, Gradle 9.7
 - Keine Datenbank: Einstellungen in SharedPreferences, Übungen als JSON-Zeilen in `filesDir/sessions.jsonl`, einzelne Tipps in `filesDir/taps/<id>.txt`
 - Keine externen Bibliotheken außer AndroidX/Compose. Diagramme sind selbst gezeichnet (Canvas).
 
 ## Aufbau
 
 ```
-app/src/main/java/de/simon/beatreffer/
+app/src/main/java/de/thebaconing/beatreffer/
   core/        Reine Kotlin-Logik ohne Android-Abhängigkeiten, voll per JUnit testbar
     Model.kt         PracticeConfig, TimeSignature, Enums (MuteMode, Tolerance, ...)
     Patterns.kt      Rhythmus-Vorlagen als Raster ("x" = tippen, "." = Pause)

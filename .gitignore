@@ -11,3 +11,8 @@
 *.apk
 *.aab
 .kotlin/
+
+# Signierschlüssel nie einchecken
+keystore.properties
+*.jks
+*.keystore

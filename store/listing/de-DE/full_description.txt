@@ -1,0 +1,28 @@
+Beatreffer trainiert dein inneres Metronom. Ein Klick gibt den Takt vor, du tippst ihn auf einem großen Button nach. Nach und nach wird der Klick leiser oder verschwindet ganz, und du musst den Takt selbst halten.
+
+So funktioniert es
+• Tempo und Dauer wählen, losspielen
+• Jeder Tipp wird sofort bewertet: zu früh, zu spät oder genau getroffen
+• Nach jeder Übung gibt es eine Auswertung mit Punkten und Abweichungen
+
+Einfacher Modus
+4/4-Takt, alle Schläge, Ton an, nur Vorzählen oder komplett still. Ideal zum Einstieg.
+
+Erweiterter Modus
+• Freie Taktarten mit Betonungsgruppen (z. B. 7/8 als 2+2+3)
+• Unterteilungen und Rhythmus-Muster
+• Fester oder wechselnder Zielschlag
+• Sechs Ausblendstufen für den Klick
+• Einstellbares Toleranzfenster und Wertung von Fehltipps
+
+Fortschritt sehen
+• Verlauf mit Diagrammen
+• Vergleich mit den letzten 7 und 30 Tagen
+• Bestwerte und Schwachstellen-Analyse
+• Vorschläge für die nächste Stufe
+• CSV-Export, auf Wunsch mit jedem einzelnen Tipp
+
+Genau
+Der Klick wird sample-genau erzeugt, die Latenz deines Geräts lässt sich kalibrieren.
+
+Ohne Werbung, ohne Konto, ohne Internet. Alle Daten bleiben auf deinem Gerät.

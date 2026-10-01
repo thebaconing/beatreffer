@@ -1,27 +1,47 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
+// Upload-Schlüssel für den Play Store. keystore.properties liegt nur lokal (siehe RELEASE.md), nie einchecken.
+val keystoreProps = Properties().apply {
+    val f = rootProject.file("keystore.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+val hasReleaseKey = keystoreProps.getProperty("storeFile") != null
+
 android {
-    namespace = "de.simon.beatreffer"
-    compileSdk = 35
+    namespace = "de.thebaconing.beatreffer"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "de.simon.beatreffer"
+        applicationId = "de.thebaconing.beatreffer"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 5
         versionName = "0.5"
+    }
+
+    signingConfigs {
+        if (hasReleaseKey) {
+            create("release") {
+                storeFile = rootProject.file(keystoreProps.getProperty("storeFile"))
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            // Zum Testen ohne eigenen Keystore mit dem Debug-Schluessel signieren
-            signingConfig = signingConfigs.getByName("debug")
+            // Ohne keystore.properties mit dem Debug-Schlüssel signieren: installierbar, aber nicht für den Play Store
+            signingConfig = if (hasReleaseKey) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
         }
     }
     compileOptions {

@@ -1,0 +1,28 @@
+Beatreffer trains your inner metronome. A click sets the beat and you tap along on a big button. Step by step the click fades out or disappears completely, and you have to keep the time yourself.
+
+How it works
+• Pick a tempo and a duration, then start
+• Every tap is rated instantly: early, late or right on the beat
+• After each session you get a summary with score and deviations
+
+Simple mode
+4/4 time, every beat, with sound, count-in only or fully silent. Perfect to get started.
+
+Advanced mode
+• Any time signature with accent groups (e.g. 7/8 as 2+2+3)
+• Subdivisions and rhythm patterns
+• Fixed or rotating target beat
+• Six fade-out levels for the click
+• Adjustable tolerance window and scoring of extra taps
+
+Track your progress
+• History with charts
+• Comparison with the last 7 and 30 days
+• Personal bests and weak-spot analysis
+• Suggestions for the next level
+• CSV export, optionally with every single tap
+
+Precise
+The click is generated sample-accurately, and your device latency can be calibrated.
+
+No ads, no account, no internet. All data stays on your device.
